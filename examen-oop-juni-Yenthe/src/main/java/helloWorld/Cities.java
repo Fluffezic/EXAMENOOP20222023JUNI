@@ -11,57 +11,63 @@ public class Cities {
 	
 	@Id
 	@Column(name = "Trackid")
-	private Integer Trackid;
+	public Integer Trackid;
 	@Column(name = "Name")
-	private String Name;
+	public String Name;
 	@Column(name = "Albumid")
-	private Integer Albumid;
-	@Column(name = "MediaTypeid")
-	private Integer MediaTypeid;
-	@Column(name = "Genreid")
-	private Integer Genreid;
+	public Integer Albumid;
+	@Column(name = "Miliseconds")
+	public Integer Miliseconds;
 	@Column(name = "Composer")
-	private String Composer;
+	public String Composer;
 	
-	public Integer getId() {
-		return id;
+	public Integer getTrackId() {
+		return Trackid;
 	}
 	
 
-	public void setId(Integer Id) {
-		this.id = Id;
+	public void setId(Integer TrackId) {
+		this.Trackid = TrackId;
 	}
 
 
 	public String getName() {
-		return name;
+		return Name;
 	}
 
 
-	public void setName(String name) {
-		this.name = name;
+	public void setName(String Name) {
+		this.Name = Name;
 	}
 
 
-	public Double getLatitude() {
-		return latitude;
+	public Integer getAlbumid() {
+		return Albumid;
 	}
 
 
-	public void setLatitude(Double latitude) {
-		this.latitude = latitude;
+	public void setAlbumid(Integer Albumid) {
+		this.Albumid = Albumid;
 	}
 
 
-	public Double getLongitude() {
-		return longitude;
+	public Integer getMiliseconds() {
+		return Miliseconds;
 	}
 
 
-	public void setLongitude(Double longitude) {
-		this.longitude = longitude;
+	public void Miliseconds(Integer Miliseconds) {
+		this.Miliseconds = Miliseconds;
 	}
-	
+	public String getComposer() {
+		return Composer;
+	}
+
+
+	public void setComposer(String Composer) {
+		this.Composer = Composer;
+	}
+
 	
 	
 }

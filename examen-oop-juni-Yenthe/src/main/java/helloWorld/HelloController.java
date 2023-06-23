@@ -30,13 +30,6 @@ public class HelloController {
 	}
 	
 	
-	@GetMapping("/byid")
-    public Cities byId(@RequestParam Integer id) {
-		System.out.println("id search: " + id);
-        Cities cities = citiesRep.findById(id).get();
-        System.out.println(cities.getName() + " " + cities.getLatitude() + " " + cities.getLongitude());
-		return cities;
-    }
 
 
 }
